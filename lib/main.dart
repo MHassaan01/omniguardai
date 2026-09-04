@@ -129,7 +129,7 @@ class _CombinedConsoleDashboardState extends State<CombinedConsoleDashboard> {
 
   Future<void> _loadNeuralModel() async {
     try {
-      _aiInterpreter = await Interpreter.fromAsset('assets/models/model.tflite');
+      _aiInterpreter = await Interpreter.fromAsset('yolov8n.tflite');
       setState(() {
         eventLedger.add("[Core Status] Local TFLite matrix maps constructed successfully.");
       });
