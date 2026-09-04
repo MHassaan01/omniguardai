@@ -1,0 +1,18 @@
+name: omniguard_ai
+description: "OmniGuard AI Local Security Core"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.5+9         # Handles the live video stream feed
+  tflite_flutter: ^0.10.4   # Runs your YOLO model locally on-device
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/model.tflite  # Links your exact binary file model
